@@ -76,7 +76,7 @@ export default function App() {
           {posts.map((post) => {
             return (
               <CardPost
-                key={post.id}
+                key={Math.random()}
                 post={post}
                 deletePostById={deletePostById}
                 likePostById={likePostById}
